@@ -56,10 +56,12 @@ export default function Home() {
               </p>
             </ContentLayout>
             <div className="flex flex-col sm:flex-row w-full h-full gap-4">
-              <div className="flex w-full h-full rounded-3xl overflow-hidden group">
+              <div className="relative flex w-full h-96 sm:h-full rounded-3xl overflow-hidden group">
                 <Image
                   className="object-cover group-hover:scale-125 transition-all ease-in-out duration-1000"
                   src={Photo.src}
+                  layout="fill"
+                  objectFit="cover"
                   alt="photo-profile"
                 />
               </div>
