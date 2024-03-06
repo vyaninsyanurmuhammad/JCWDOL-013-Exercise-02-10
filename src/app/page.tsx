@@ -9,6 +9,7 @@ import {
   WhatsappLogo,
 } from "@phosphor-icons/react";
 import ContactLlayout from "@/components/layouts/contact-layout";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -56,7 +57,7 @@ export default function Home() {
             </ContentLayout>
             <div className="flex flex-col sm:flex-row w-full h-full gap-4">
               <div className="flex w-full h-full rounded-3xl overflow-hidden group">
-                <img
+                <Image
                   className="object-cover group-hover:scale-125 transition-all ease-in-out duration-1000"
                   src={Photo.src}
                   alt="photo-profile"
